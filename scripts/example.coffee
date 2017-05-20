@@ -10,8 +10,17 @@
 
 module.exports = (robot) ->
 
-  # robot.hear /badger/i, (res) ->
-  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+ robot.hear /tech notts/i, (resp) ->
+   http = require 'http'
+
+   robot.http("http://api.meetup.com/Tech-Nottingham/events/?status=upcoming")
+              .get() (err, res, body) ->
+                  obj = JSON.parse(body)
+                  dateOfEvent = new Date(obj[0].time * 1000)
+                  resp.send "Next Event : " + obj[0].name +
+                            " \n Date : " + dateOfEvent.getDate() + "/" + dateOfEvent.getMonth()
+ 
+
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
