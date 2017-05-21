@@ -1,13 +1,3 @@
-# Description:
-#   Example scripts for you to examine and try out.
-#
-# Notes:
-#   They are commented out by default, because most of them are pretty silly and
-#   wouldn't be useful and amusing enough for day to day huboting.
-#   Uncomment the ones you want to try and experiment with.
-#
-#   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
-
 module.exports = (robot) ->
 
  robot.hear /weeks events/i, (resp) ->
@@ -16,11 +6,13 @@ module.exports = (robot) ->
               .get() (err, res, body) ->
                   {parseString} = require 'xml2js'
                   parseString body, (err, result) ->
-                    listofe = result.results.items[0].item
-                    time = parseInt(listofe[0].time[0])
-                    dateOfEvent = new Date(time)
-                    resp.send "Event Name : " + listofe[0].name[0] +
-                            "\n Date : " + dateOfEvent.getDate() + "/" + (dateOfEvent.getMonth()+1) + 
-                            "\n Sign Up: " + listofe[0].event_url[0]
-
+                    for a in [0...len = result.results.items.length]
+                      console.log(result.results.items[a].item)
+                      listofe = result.results.items[a].item
+                      time = parseInt(listofe[a].time[0])
+                      dateOfEvent = new Date(time)
+                      resp.send "Event Name : " + listofe[a].name[0] +
+                                "\n Date : " + dateOfEvent.getDate() + "/" + (dateOfEvent.getMonth()+1) + 
+                                "\n Sign Up: " + (listofe[a].event_url[0])
+          
                   
