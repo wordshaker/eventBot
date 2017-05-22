@@ -14,5 +14,3 @@ module.exports = (robot) ->
                       resp.send "Event Name : " + listofe[a].name[0] +
                                 "\n Date : " + dateOfEvent.getDate() + "/" + (dateOfEvent.getMonth()+1) + 
                                 "\n Sign Up: " + (listofe[a].event_url[0])
-          
-                  
