@@ -7,10 +7,15 @@ This is a slack bot designed to retrieve information about Nottingham tech event
 When interacting with the slack bot using sentences with the following phrases will pull back the information about the next event for that group.
 
 'notts AI'  - [Nottingham Artificial Intelligence Meetup](https://www.meetup.com/Nottingham-Artificial-Intelligence-Meetup/)
+
 'notts progs  - [Nottingham Programmers](https://www.meetup.com/NottinghamProgrammers/)
+
 'tech notts - [Tech Nottingham](https://www.meetup.com/Tech-Nottingham/)
+
 'wit notts  - [Women In Tech Nottingham](https://www.meetup.com/Women-In-Tech-Nottingham/)
+
 'blockchain notts - [Blockchain Nottingham](https://www.meetup.com/Blockchain-Nottingham/)
+
 'notts js - [NottsJS](https://www.meetup.com/NottsJS/)
 
 I.e. "@eventbot when is the next notts AI meetup"
