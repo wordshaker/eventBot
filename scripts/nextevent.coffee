@@ -1,5 +1,8 @@
 module.exports = (robot) ->
 
+var meetupevents = require('../meetups.json');
+
+
  robot.hear /notts AI/i, (resp) ->
    http = require 'http'
    robot.http("http://api.meetup.com/Nottingham-Artificial-Intelligence-Meetup/events/?status=upcoming")

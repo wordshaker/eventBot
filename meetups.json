@@ -1,0 +1,30 @@
+{
+  "Nottingham-Artificial-Intelligence-Meetup": {
+    "name": "Nottingham Artificial Intelligence Meetup",
+    "aliases": ["AI", "Artificial Intelligence"]
+  },
+  "NottinghamProgrammers": {
+    "name": "Nottingham Programmers",
+    "aliases": ["Progs", "Nottingham Programmers", "NottinghamProgrammers"]
+  },
+  "Tech-Nottingham": {
+    "name": "Tech Nottingham",
+    "aliases": ["TechNottingham", "Tech Nottingham", "Tech Notts", "TechNotts", "Tech Nott", "TechNott" ]
+  }, 
+  "Women-In-Tech-Nottingham": {
+    "name": "Women In Tech Nottingham",
+    "aliases": ["WomenInTechNottingham", "Women In Tech Nottingham", "Women In Tech Notts", "WIT", "WITNOTT", "WITNOTTS" ]
+  }, 
+  "Blockchain-Nottingham": {
+    "name": "Blockchain Nottingham",
+    "aliases": ["Blockchain"]
+  },
+  "NottsJS": {
+    "name": "NottsJS",
+    "aliases": ["NottsJS", "NottJS", "JS"]
+  },  
+  "dotnetnotts": {
+    "name": "Dot Net Notts",
+    "aliases": ["dotnetnotts", "dotnetnott", "dotnet", "dot net"]
+  }  
+}
